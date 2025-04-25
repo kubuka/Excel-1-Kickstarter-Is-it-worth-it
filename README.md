@@ -109,6 +109,7 @@ This analysis shows a strong presence of English-speaking countries on Kickstart
 In this section, I analyzed how the timing of campaign launches affects their number and success, using **Power Pivot** and **DAX**.
 
 To answer the questions, I created a separate **Calendar table** and established a **one-to-many relationship** with the main dataset.
+
   ![Zrzut ekranu 2025-04-25 o 19 11 12](https://github.com/user-attachments/assets/1cc2e8d7-cf73-45dc-89f7-2fd9cabb8242)
 
 Additionally, I used DAX to create a custom column that assigned each campaign to a specific season based on its launch date.
