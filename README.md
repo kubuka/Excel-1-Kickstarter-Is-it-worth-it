@@ -1,17 +1,17 @@
-# 🎯 Kickstarter Data Analysis – First Excel Project
+# 🎯 Kickstarter Data Analysis – Excel Project
 
 ![gifexcel1](https://github.com/user-attachments/assets/a6afa697-e3b6-4abc-bfb2-b4a0aa594bdc)
 
 
 ### Introduction
-This is my very first data analysis project using **Microsoft Excel**.  
+This is my very first "professional" data analysis project using **Microsoft Excel**.  
 I worked with a real-world dataset from **Kickstarter** to explore various aspects of crowdfunding campaigns – including:
 
 - Success rates by category and country  
 - Relationships between funding goals and outcomes  
 - Time-based trends in campaign launches and performance  
 
-This also marks the beginning of my data analysis portfolio and a documented step in my learning journey :)
+This also marks the beginning of my data portfolio and a documented step in my learning journey :)
 
 ### Excel Skills Used
 - **📊 Pivot Tables**
