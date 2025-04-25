@@ -95,9 +95,99 @@ I focused on answering two key questions:
 - Which countries launch the most crowdfunding campaigns?
 - What are the success rates of campaigns by country?
 
+![Zrzut ekranu 2025-04-25 o 18 56 10](https://github.com/user-attachments/assets/e17f59b9-d466-48d3-92c7-3f8604327e1e)
 
-![Zrzut ekranu 2025-04-24 o 21 13 55](https://github.com/user-attachments/assets/899cfbab-b08a-4b91-964f-53ca2ef4cffc)     ![Zrzut ekranu 2025-04-24 o 21 14 11](https://github.com/user-attachments/assets/75655daa-f546-40a4-86c3-8a6799cd3a64)
+🟰 Summary:
+- The **United States** is by far the most active country, with **289,671** campaigns and a success rate of **38%**.
+- Other active countries include the **United Kingdom** (**33,215 campaigns**, 36%) and **Canada** (**14,508 campaigns**, 28%).
+- The highest success rates are seen in **Hong Kong** (38%) and the **USA** (38%), while **Italy** (16%) and **Austria** (19%) have the lowest.
 
+This analysis shows a strong presence of English-speaking countries on Kickstarter, and highlights significant differences in success rates depending on the region, possibly influenced by cultural, economic, or market factors.
+
+### ✅ Time
+
+In this section, I analyzed how the timing of campaign launches affects their number and success, using **Power Pivot** and **DAX**.
+
+To answer the questions, I created a separate **Calendar table** and established a **one-to-many relationship** with the main dataset.
+  ![Zrzut ekranu 2025-04-25 o 19 11 12](https://github.com/user-attachments/assets/1cc2e8d7-cf73-45dc-89f7-2fd9cabb8242)
+
+Additionally, I used DAX to create a custom column that assigned each campaign to a specific season based on its launch date.
+
+
+Key questions explored:
+
+- Has the number of Kickstarter projects increased over time?
+- Which months are the most popular for launching campaigns?
+- Does the season affect the success rate?
+
+![Zrzut ekranu 2025-04-25 o 19 14 53](https://github.com/user-attachments/assets/60008c73-b1fe-4e8f-a821-51c858ddea2c) ![Zrzut ekranu 2025-04-25 o 19 15 01](https://github.com/user-attachments/assets/5af8e6d1-ff8b-4e12-9335-c6baf1026bca) ![Zrzut ekranu 2025-04-25 o 19 15 14](https://github.com/user-attachments/assets/c32c86b7-1428-45ac-8eda-948d18d0c4bc)
+
+
+#### 🟰 Summary – Time
+
+- The number of campaigns grew rapidly between **2009 and 2015**, peaking at **74,438** campaigns in **2015**.
+- After 2015, there was a noticeable decline in new campaign launches each year.
+- **August**, **July**, and **May** are the most popular months for starting a campaign, each with over **33,000** launches.
+- **Spring** campaigns have the highest success rate at **38%**, slightly better than other seasons (Summer 35%, Autumn 36%, Winter 35%).
+
+This analysis suggests that both the time of year and overall platform trends influence the volume and success of crowdfunding projects.
+
+### ✅ Finance
+
+In this section, I explored the financial performance of Kickstarter campaigns using **Power Pivot** and **DAX**.
+
+To answer the questions, I created custom measures to calculate both the **average** and **median** pledged amounts, as well as a new column to flag campaigns that **exceeded their funding goal**. I then used `CALCULATE` and `COUNT` functions to determine how often goals were surpassed.
+
+Key questions explored:
+
+- Which projects raised the most money?
+- What is the difference between the average and median amount pledged?
+- In which categories do campaigns most frequently exceed their funding goals?
+
+![Zrzut ekranu 2025-04-25 o 19 24 02](https://github.com/user-attachments/assets/053768f7-acf2-4390-b3df-5e6b944a55a2)
+
+![Zrzut ekranu 2025-04-25 o 19 24 20](https://github.com/user-attachments/assets/f48672f3-500d-42d5-a12f-133585efddc8) 
+
+![Zrzut ekranu 2025-04-25 o 19 24 40](https://github.com/user-attachments/assets/26790156-12d5-4e21-956e-2d916c6ac08b)
+
+
+#### 🟰 Summary – Finance
+
+- The top-funded projects include:
+  - **Pebble Time - Awesome Smartwatch** ($20.3M)
+  - **COOLEST COOLER** ($13.3M)
+  - **Pebble 2, Time 2 + Pebble Core** ($12.8M)
+- The **average** amount pledged across all projects is **$9,144**, while the **median** is significantly lower at **$632**, showing a large disparity caused by a few exceptionally high-funded campaigns.
+- The difference between the average and median amounts is **$8,512**, highlighting the skewness of the data.
+- The categories with the most campaigns exceeding their funding goals are:
+  - **Music** (23,274 successful campaigns)
+  - **Film & Video** (22,641 successful campaigns)
+  - **Games** (12,567 successful campaigns)
+
+This analysis shows that while a few campaigns raise extremely high amounts, the majority of projects gather more modest funding. It also emphasizes that some categories are much more successful in surpassing their targets than others.
+
+## 📊 Final Dashboard & Summary
+
+After completing the analysis across five key dimensions — **overall success**, **geography**, **time** and **finance** — I summarized the most important insights and visualized them in a dynamic and interactive **Excel dashboard**.
+
+The dashboard allows users to **filter the data by country**, enabling a more targeted analysis based on regional interest.
+
+#### ✨ Dashboard Features
+
+**Static visuals** (always visible):
+- 📈 Number of campaigns per year (2009–2018)
+- 🥇 Top countries by success rate
+- 🗂 Distribution of all campaigns across categories
+
+**Dynamic visuals** (change based on selected country):
+- ✅ Average success rate for the selected country
+- 📊 Category breakdown: number of campaigns per category + their individual success rates
+- 🏆 Table of top campaigns by funds raised
+  
+![Zrzut ekranu 2025-04-25 o 19 34 52](https://github.com/user-attachments/assets/fd0aa4cd-46dc-42b5-bfc3-96919ce25a98)
+
+
+This final dashboard brings together key insights from the ETL process and DAX-driven analysis, offering a clear, engaging, and interactive overview of Kickstarter’s historical campaign data.
 
 
 
