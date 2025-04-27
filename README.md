@@ -190,6 +190,10 @@ The dashboard allows users to **filter the data by country**, enabling a more ta
 
 This final dashboard brings together key insights from the ETL process and DAX-driven analysis, offering a clear, engaging, and interactive overview of Kickstarter’s historical campaign data.
 
+This project was mainly about refreshing my skills and learning some new techniques in data analysis, Power Query, Power Pivot, and DAX.  
+The focus was on building a strong analytical process rather than creating a perfect-looking dashboard (stay tuned for PowerBI project) — so while the visuals are simple, the real value lies in the insights and the logic behind the work.
+
+
 
 
 
